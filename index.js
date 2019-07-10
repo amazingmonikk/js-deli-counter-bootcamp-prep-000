@@ -1,8 +1,26 @@
-function takeANumber (katzDeliLine, name) {
+/*function takeANumber (katzDeliLine, name) {
 //Add people to the line
 katzDeliLine.push(name);
 return("Welcome, " + name + ". You are number " + (katzDeliLine.indexOf(name) + 1) +  " in line.");
 }
+
+*/
+
+
+
+function takeANumber(line) {
+  
+for(var i = 0; i < line.length; i+=1) 
+{ if (line.length === 0) {
+
+return("The line is currently empty.");
+}  else 
+
+return ("Welcome! You are namber"  + (i + 1) "in line")
+  
+}
+
+console.log(takeANumber(line))
 
 
 
@@ -19,7 +37,7 @@ if (katzDeliLine.length === 0) {
 	var firstInLine = katzDeliLine[0];
 	katzDeliLine.shift();
 
-	return("Currently serving " + firstInLine + ".");
+	return "Currently serving " + firstInLine + ".";
 	}
 
 }
